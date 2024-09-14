@@ -20,6 +20,9 @@ h1{
   margin: 0 auto;
   padding: 0 10px;
   box-shadow: rgb(0,0,0) 0px 0px 0px 3px;
+  left: 15vw;
+  position: fixed;
+  z-index: 1;
 }
 
 .nav-btn {
@@ -58,4 +61,99 @@ h1{
   height: 100%;
   background: linear-gradient(109.6deg, rgb(9, 154, 151) 11.2%, rgb(21, 205, 168) 91.1%);;
   transition: all .5s;
+  z-index: 2;
+}
+
+.adminbtn {
+  display: block;
+  cursor: pointer;
+  background-color: rgba(6, 61, 45);
+  border-radius: 10px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  transition: all .5s;
+  height: 5%;
+  width: 10%;
+  align-content: center;
+  opacity: .8;
+  box-shadow: rgb(0,0,0) 0px 0px 0px 1px;
+  color: #efefef;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.adminbtn:hover{
+  opacity: 1;
+}
+
+.blurback{
+  height: 100%;
+  width: 100%;
+  filter: blur(8px);
+  background-color: #efefef;
+  opacity: .8;
+  z-index: 9;
+  position: fixed;
+  top: 0px;
+}
+
+.config{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 0vw;
+  height: 0vh;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 80vw;
+  top: 60px;
+  left: 10vw;
+  transition: all .5s;
+  z-index: 10;
+  position: fixed;
+}
+
+.config-btn {
+  display: block;
+  cursor: pointer;
+  background-color: rgba(6, 61, 45);
+  border-radius: 10px 10px 0px 0px;
+  transition: all .5s;
+  height: 40px;
+  align-content: center;
+  opacity: .8;
+  position: fixed;
+  top: 15px;
+  right: 150px;
+  box-shadow: rgb(0,0,0) 0px 0px 0px 2.5px;
+  display: none;
+  position: fixed;
+  z-index: 10;
+}
+
+.config-btn:hover{
+  opacity: 1;
+}
+
+.config-tab {
+  cursor: pointer;
+  background-color: rgba(6, 61, 45);
+  border-radius: 10px 10px 0px 0px;
+  transition: all .5s;
+  height: 40px;
+  width: 100px;
+  align-content: center;
+  justify-content: center;
+  opacity: .8;
+  top: 15px;
+  box-shadow: rgb(0,0,0) 0px 0px 0px 2.5px;
+  position: fixed;
+  z-index: 10;
+  color: #efefef;
+  font-weight: bolder;
+}
+
+.config-tab:hover{
+  opacity: 1;
 }

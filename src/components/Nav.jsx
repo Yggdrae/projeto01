@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Config from "./Config";
 
 const Nav = () => {
     
@@ -17,6 +18,7 @@ const Nav = () => {
                 <div className="bar" style={{transform: !btn ? "" : "translate(0, -9px) rotate(45deg)"}}></div>
             </div>
             <div className="nav" style={{width: !btn ? "0%" : "30%", boxShadow: !btn ? "none" : "rgb(0,0,0) 0px 0px 0px 2px"}}></div>
+            <Config btn={btn}/>
         </>
     )
 }
